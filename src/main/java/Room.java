@@ -12,34 +12,52 @@ public class Room {
         weapons = new ArrayList<Weapon>();
     }
 
+    public Room(List<RoomContent> list){
+        items = new ArrayList<Item>();
+        monsters = new ArrayList<Monster>();
+        weapons = new ArrayList<Weapon>();
+
+        for (RoomContent roomObject: list){
+            if (roomObject instanceof Item){
+                items.add(roomObject);
+            }
+            if (roomObject instanceof Monster){
+                monsters.add(roomObject);
+            }
+            if (roomObject instanceof Weapon){
+                weapons.add(roomObject);
+            }
+        }
+    }
+
     //adders
     public void addItem(Item item){
-        this.items.add(item);
+        this.items.add(item) if (item != null);
     }
 
     public void addItems(List<Item> items){
         for (Item item: items){
-            this.items.add(item);
+            this.items.add(item)  if (item != null);
         }
     }
 
     public void addMonster(Monster monster){
-        this.monsters.add(monster);
+        this.monsters.add(monster) if monster != null;
     }
 
     public void addMonsters(List<Monster> monsters){
         for (Monster monster: monsters){
-            this.monsters.add(monster);
+            this.monsters.add(monster) if monster != null;
         }
     }
 
     public void addWeaponItem(Weapon weapon){
-        this.weapons.add(weapon);
+        this.weapons.add(weapon) if weapon != null;
     }
 
     public void addWeapons(List<Weapon> weapons){
         for (Weapon weapon: weapons){
-            this.weapons.add(weapon);
+            this.weapons.add(weapon) if weapon != null;
         }
     }
 

@@ -1,10 +1,10 @@
-public class Weapon {
+public class Weapon extends RoomContent {
 
     private String name;
     private String damage;
     private String action;
 
-    public Weapon(String name, String damage, String action){
+    public Weapon(String name, int damage, String action){
         this.name = name;
         this.damage = damage;
         this.action = action;
@@ -19,7 +19,7 @@ public class Weapon {
         this.name = name;
     }
 
-    public String getDamage() {
+    public int getDamage() {
         return damage;
     }
 
