@@ -1,6 +1,12 @@
-public class Item extends RoomContent  {
+public class Item implements RoomContent  {
     String name;
     int HP;
+
+    public Item(String name, int HP, int damage){
+        this.name = name;
+        this.HP = HP;
+        this.damage = damage;
+    }
 
     public String getName() {
         return name;
@@ -16,9 +22,5 @@ public class Item extends RoomContent  {
 
     int damage;
 
-    public ItemMaker(String name, int HP, int damage){
-        this.name = name;
-        this.HP = HP;
-        this.damage = damage;
-    }
+
 }

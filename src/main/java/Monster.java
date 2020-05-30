@@ -1,7 +1,7 @@
-public class Monster extends RoomContent {
+public class Monster implements RoomContent {
     private String name;
     private int damage;
-    private boolean agressive;    //aggressive monsters will attack player on sight
+    private int points;    //aggressive monsters will attack player on sight
 
     public int getDamage() {
         return damage;
@@ -11,13 +11,13 @@ public class Monster extends RoomContent {
         return name;
     }
 
-    public boolean isAgressive{
-        return aggressive;
+    public int getPoints(){
+        return points;
     }
 
-    public Monster(String name, int damage, boolean aggressive){
+    public Monster(String name, int damage, int points){
         this.name = name;
         this.damage = damage;
-        this.aggressive = aggressive;
+        this.points = points;
     }
 }

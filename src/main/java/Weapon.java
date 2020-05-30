@@ -1,7 +1,7 @@
-public class Weapon extends RoomContent {
+public class Weapon implements RoomContent {
 
     private String name;
-    private String damage;
+    private int damage;
     private String action;
 
     public Weapon(String name, int damage, String action){
@@ -23,7 +23,7 @@ public class Weapon extends RoomContent {
         return damage;
     }
 
-    public void setDamage(String damage) {
+    public void setDamage(int damage) {
         this.damage = damage;
     }
 

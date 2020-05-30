@@ -2,19 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c7fdaf67-a711-404b-ab92-d586fe18f613" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/ooc_game.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/RoomContent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Map.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/MapUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/ooc_game.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ooc_game.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/GameObject.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Item.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ItemMaker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ItemMaker.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Monster.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Monster.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MonsterMaker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MonsterMaker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Room.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/RoomMaker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/RoomMaker.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Weapon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Weapon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/WeaponMaker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WeaponMaker.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +45,10 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -74,18 +76,26 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="765" y="205" key="#com.intellij.ide.util.MemberChooser" timestamp="1590850924889">
+    <state x="701" y="324" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1590853641271">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="765" y="205" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1590850924889" />
-    <state x="740" y="276" key="FileChooserDialogImpl" timestamp="1590741904627">
+    <state x="701" y="324" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1590853641271" />
+    <state x="765" y="205" key="#com.intellij.ide.util.MemberChooser" timestamp="1590855848761">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="276" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1590741904627" />
-    <state x="656" y="345" key="com.intellij.ide.util.TipDialog" timestamp="1590850235440">
+    <state x="765" y="205" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1590855848761" />
+    <state x="740" y="276" key="FileChooserDialogImpl" timestamp="1590855087952">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="656" y="345" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1590850235440" />
+    <state x="740" y="276" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1590855087952" />
+    <state x="440" y="95" key="SettingsEditor" timestamp="1590855692064">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="440" y="95" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1590855692064" />
+    <state x="656" y="345" key="com.intellij.ide.util.TipDialog" timestamp="1590855738636">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="656" y="345" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1590855738636" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1590850869414">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
