@@ -1,0 +1,15 @@
+{
+  "name": "test map",
+  "width": 3,
+  "depth": 3,
+  "rooms": {
+    "0,0": null,
+    "0,1": {
+      "items": [],
+      "monsters": [],
+      "weapons": []
+    }
+
+  },
+  "startingRoom": "0,1"
+}

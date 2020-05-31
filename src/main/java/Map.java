@@ -1,11 +1,14 @@
+import java.util.ArrayList;
+import java.util.List;
+
 class Map{
     List<List<Room>> rooms;
 
     public Map(){
-        return new Room();
+        rooms = new ArrayList<List<Room>>();
     }
     public Map(List<List<Room>> rooms){
-        this.rooms = rooms
+        this.rooms = rooms;
     }
 
     public Room addRoom(int x, int y, Room room){
@@ -19,7 +22,7 @@ class Map{
 
     }
 
-    public Room removeRoom(int x, int y){
+    public void removeRoom(int x, int y){
         rooms.get(x).set(y, null);
     }
 }
